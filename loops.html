@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS1</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <button onclick="randomName()">Random</button>
+  <button onclick="allNames()">Random</button>
+<script>
+
+ const names = ['melissa', 'edgar', 'gabby', 'alex', 'zach', 'will']
+ function randomName() {
+   const pos = Math.floor(Math.random() * names.length);
+   if (names.length === 0) {
+     return
+   }
+
+   const name = name[pos];
+   console.log(name);
+   const el = document.createEelement('h2');
+   el.innerText = name;
+   document.body.appendChild(el);
+   names.splice(pos, 1);
+ }
+
+</script>
+
+</body>
+</html>

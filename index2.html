@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS1</title>
+</head>
+<body>
+
+<!-- <script src="js/script.js"></script> -->
+
+<script>
+  const img = document.getElementsByTagName('img');
+  const img = imgs[0];
+  console.log('img', imgs[0]);
+  const px = 'px';
+  let move = 0;
+
+  img.style.backgroundColor = red;
+  img.style.padding = '20px';
+  img.style.position = 'absolute';
+  img.style.right = '0' + px;
+
+
+  setInterval( () => {
+    move++;
+    img.style.right = move + px;
+    }, 1000)
+
+
+  const me = {
+  name: 'Gabriela',
+  hair: 'Brown',
+  age: 26,
+}
+
+console.log(me.name + me.hair + me.age);
+
+</script>
+
+</body>
+</html>
